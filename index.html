@@ -13,7 +13,6 @@
   --text: #374151;
   --muted: #6b7280;
   --bg: #ffffff;
-  --soft: #f3f4f6;
 }
 
 body {
@@ -24,6 +23,26 @@ body {
   line-height: 1.6;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.brand {
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--muted);
+}
+
 .container {
   max-width: 1000px;
   margin: auto;
@@ -32,7 +51,6 @@ body {
 
 h1 {
   font-size: 42px;
-  line-height: 1.1;
   color: var(--charcoal);
 }
 
@@ -51,14 +69,6 @@ p {
   text-decoration: none;
 }
 
-.button:hover {
-  background: var(--teal-light);
-}
-
-.hero {
-  padding: 80px 20px 40px;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -72,27 +82,8 @@ p {
   border-radius: 12px;
 }
 
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-top: 40px;
-  align-items: center;
-}
-
-.about-img {
-  max-width: 280px;
-  border-radius: 12px;
-}
-
-.footer {
-  text-align: center;
-  padding: 30px;
-  color: var(--muted);
-}
-
 @media (max-width: 768px) {
-  .grid, .split {
+  .grid {
     grid-template-columns: 1fr;
   }
 }
@@ -101,7 +92,15 @@ p {
 
 <body>
 
-<div class="container hero">
+<div class="header">
+  <div class="brand">NorthShore Executive Counseling</div>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </div>
+</div>
+
+<div class="container">
   <h1>High performance should not come at the cost of your life outside of work.</h1>
 
   <p>
@@ -111,9 +110,7 @@ p {
   <a class="button" href="https://care.headway.co/providers/joseph-cunnane?utm_source=pem&utm_medium=direct_link&utm_campaign=193007" target="_blank">
     Schedule a Confidential Consultation
   </a>
-</div>
 
-<div class="container">
   <p>
     From the outside, things may still look successful. Internally, something feels harder than it used to. Work follows you home. Over time, burnout begins to affect both performance and presence.
   </p>
@@ -140,51 +137,25 @@ p {
     </div>
   </div>
 
-  <div class="split">
-    <div>
-      <p>
-        Our approach is structured and practical. We identify the patterns driving burnout and implement changes that restore both performance and stability.
-      </p>
+  <p>
+    Our approach is structured and practical. We identify the patterns driving burnout and implement changes that restore both performance and stability.
+  </p>
 
-      <p>
-        This practice offers both private-pay and insurance-based options. Coverage can be reviewed during scheduling.
-      </p>
+  <p>
+    This practice offers both private-pay and insurance-based options. Coverage can be reviewed during scheduling.
+  </p>
 
-      <ul>
-        <li>High-performing professionals and leaders</li>
-        <li>Work stress affecting focus or energy</li>
-        <li>Pressure affecting relationships and home life</li>
-        <li>Preference for a results-oriented approach</li>
-      </ul>
-    </div>
+  <ul>
+    <li>High-performing professionals and leaders</li>
+    <li>Work stress affecting focus or energy</li>
+    <li>Pressure affecting relationships and home life</li>
+    <li>Preference for a results-oriented approach</li>
+  </ul>
 
-    <div>
-      <img src="headshot.jpg" alt="Joseph Cunnane" class="about-img">
-    </div>
-  </div>
+  <a class="button" href="https://care.headway.co/providers/joseph-cunnane?utm_source=pem&utm_medium=direct_link&utm_campaign=193007" target="_blank">
+    View Availability
+  </a>
 
-  <div class="split">
-    <div>
-      <p>
-        This work is led by Joseph Cunnane, LCPC, focused on helping professionals navigate burnout, stress, and the impact these have on performance and relationships.
-      </p>
-
-      <p>
-        The goal is not just insight, but meaningful and lasting change.
-      </p>
-    </div>
-  </div>
-
-  <div style="margin-top:50px;">
-    <a class="button" href="https://care.headway.co/providers/joseph-cunnane?utm_source=pem&utm_medium=direct_link&utm_campaign=193007" target="_blank">
-      View Availability
-    </a>
-  </div>
-
-</div>
-
-<div class="footer">
-  NorthShore Executive Counseling
 </div>
 
 </body>

@@ -12,13 +12,12 @@
   --charcoal: #1f2933;
   --text: #374151;
   --muted: #6b7280;
-  --bg: #ffffff;
 }
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: var(--bg);
+  background: white;
   color: var(--text);
   line-height: 1.6;
 }
@@ -36,7 +35,6 @@ body {
 .brand {
   font-weight: 700;
   font-size: 1.4rem;
-  letter-spacing: 0.01em;
   color: var(--charcoal);
 }
 
@@ -44,10 +42,12 @@ body {
   margin-left: 20px;
   text-decoration: none;
   color: var(--muted);
+  font-weight: 500;
 }
 
-.nav a:hover {
-  color: var(--teal);
+.nav a:last-child {
+  color: var(--charcoal);
+  font-weight: 600;
 }
 
 /* CONTENT */
@@ -59,7 +59,6 @@ body {
 
 h1 {
   font-size: 42px;
-  line-height: 1.1;
   color: var(--charcoal);
 }
 
@@ -76,7 +75,6 @@ p {
   background: var(--teal);
   color: white;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .button:hover {
@@ -106,7 +104,6 @@ li {
   margin-bottom: 8px;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
@@ -117,72 +114,70 @@ li {
 
 <body>
 
-<!-- HEADER -->
 <div class="header">
   <div class="brand">NorthShore Executive Counseling</div>
   <div class="nav">
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="about.html">Meet</a>
   </div>
 </div>
 
-<!-- HERO -->
 <div class="container">
-  <h1>High performance should not come at the cost of your life outside of work.</h1>
 
-  <p>
-    We work with high-performing professionals who want to restore clarity, energy, and sustainable performance while feeling more present and connected at home.
-  </p>
+<h1>High performance should not come at the cost of your life outside of work.</h1>
 
-  <a class="button" href="https://care.headway.co/providers/joseph-cunnane?utm_source=pem&utm_medium=direct_link&utm_campaign=193007" target="_blank">
-    Schedule a Confidential Consultation
-  </a>
+<p>
+  Our focus is on helping high-performing professionals restore clarity, energy, and sustainable performance while feeling more present and connected at home.
+</p>
 
-  <p>
-    From the outside, things may still look successful. Internally, something feels harder than it used to. Work follows you home, and over time burnout begins to affect both performance and presence.
-  </p>
+<a class="button" href="https://care.headway.co/providers/joseph-cunnane?utm_source=pem&utm_medium=direct_link&utm_campaign=193007" target="_blank">
+Schedule a Confidential Consultation
+</a>
 
-  <p>
-    Many clients come in wanting not only to feel sharper again, but also to strengthen relationships at home that have been affected by the spillover of stress.
-  </p>
+<p>
+  From the outside, things may still look successful. Internally, something feels harder than it used to. Work follows you home, and over time burnout begins to affect both performance and presence.
+</p>
 
-  <!-- GRID -->
-  <div class="grid">
-    <div class="card">
-      <ul>
-        <li>Restore clarity and decision-making</li>
-        <li>Reduce stress and constant pressure</li>
-        <li>Build sustainable routines</li>
-      </ul>
-    </div>
+<p>
+  Our focus includes helping individuals feel sharper, more in control, and more present while strengthening relationships at home that are affected by the spillover of stress.
+</p>
 
-    <div class="card">
-      <ul>
-        <li>Improve presence and connection</li>
-        <li>Reduce stress impacting home life</li>
-        <li>Strengthen emotional regulation</li>
-      </ul>
-    </div>
+<div class="grid">
+  <div class="card">
+    <ul>
+      <li>Restore clarity and decision-making</li>
+      <li>Reduce stress and constant pressure</li>
+      <li>Build sustainable routines</li>
+    </ul>
   </div>
 
-  <p>
-    Our approach is structured and practical. We identify the patterns driving burnout and implement changes that restore both performance and stability.
-  </p>
+  <div class="card">
+    <ul>
+      <li>Improve presence and connection</li>
+      <li>Reduce stress impacting home life</li>
+      <li>Strengthen emotional regulation</li>
+    </ul>
+  </div>
+</div>
 
-  <p>
-    This practice offers both private-pay and insurance-based options. Coverage can be reviewed during scheduling.
-  </p>
+<p>
+  Our approach is structured and practical. We identify the patterns driving burnout and implement changes that restore both performance and stability.
+</p>
 
-  <ul>
-    <li>High-performing professionals and leaders</li>
-    <li>Work stress affecting focus or energy</li>
-    <li>Pressure affecting relationships and home life</li>
-    <li>Preference for a results-oriented approach</li>
-  </ul>
+<p>
+  This practice offers both private-pay and insurance-based options. Coverage can be reviewed during scheduling.
+</p>
 
-  <a class="button" href="https://care.headway.co/providers/joseph-cunnane?utm_source=pem&utm_medium=direct_link&utm_campaign=193007" target="_blank">
-    View Availability
-  </a>
+<ul>
+  <li>High-performing professionals and leaders</li>
+  <li>Work stress affecting focus or energy</li>
+  <li>Pressure affecting relationships and home life</li>
+  <li>A preference for a clear, results-oriented approach</li>
+</ul>
+
+<a class="button" href="https://care.headway.co/providers/joseph-cunnane?utm_source=pem&utm_medium=direct_link&utm_campaign=193007" target="_blank">
+View Availability
+</a>
 
 </div>
 

@@ -1,131 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | NorthShore Executive Counseling</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet | NorthShore Executive Counseling</title>
 
-  <style>
-    :root {
-      --teal: #0f766e;
-      --charcoal: #1f2933;
-      --muted: #6b7280;
-      --bg: #ffffff;
-    }
+<style>
+:root {
+  --teal: #0f766e;
+  --charcoal: #1f2933;
+  --muted: #6b7280;
+}
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--charcoal);
-      line-height: 1.6;
-    }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: white;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
 
-    /* HEADER */
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
 
-    .brand {
-      font-weight: 700;
-      font-size: 1.4rem;
-      letter-spacing: 0.01em;
-      color: var(--charcoal);
-    }
+.brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
 
-    .nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: var(--muted);
-    }
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--muted);
+}
 
-    .nav a:hover {
-      color: var(--teal);
-    }
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
-    /* CONTENT */
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px 60px;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+}
 
-    .about-grid {
-      display: grid;
-      grid-template-columns: 300px 1fr;
-      gap: 40px;
-      align-items: start;
-    }
+img {
+  width: 100%;
+  border-radius: 12px;
+}
 
-    img {
-      width: 100%;
-      max-width: 280px;
-      border-radius: 14px;
-      display: block;
-    }
+p {
+  font-size: 18px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
 
-    p {
-      font-size: 18px;
-      color: var(--muted);
-      margin-bottom: 20px;
-    }
-
-    @media (max-width: 768px) {
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      img {
-        margin-bottom: 20px;
-      }
-    }
-  </style>
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <div class="header">
-    <div class="brand">NorthShore Executive Counseling</div>
-    <div class="nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-    </div>
+<div class="header">
+  <div class="brand">NorthShore Executive Counseling</div>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">Meet</a>
   </div>
+</div>
 
-  <div class="container">
+<div class="container">
 
-    <div class="about-grid">
+<div class="grid">
 
-      <div>
-        <img src="headshot.jpg" alt="Joseph Cunnane">
-      </div>
+<div>
+  <img src="headshot.jpg" alt="Joseph Cunnane">
+</div>
 
-      <div>
-        <p>
-          NorthShore Executive Counseling focuses on helping high-performing professionals navigate burnout, sustained stress, and the impact these have on both performance and relationships.
-        </p>
+<div>
+  <p>
+    Our focus is on helping high-performing professionals navigate burnout, sustained stress, and the impact these have on both performance and relationships.
+  </p>
 
-        <p>
-          This work is grounded in a practical understanding of high-responsibility environments. Before transitioning to counseling, Joseph spent over twenty years working in finance and accounting, including experience as a Certified Public Accountant. In addition to a Master of Arts in Counseling from Northwestern University, he also holds an MBA.
-        </p>
+  <p>
+    Our approach is grounded in a practical understanding of high-responsibility environments. Before transitioning to counseling, Joseph spent over twenty years in finance and accounting, including experience as a Certified Public Accountant. He also holds an MBA and a Master of Arts in Counseling from Northwestern University.
+  </p>
 
-        <p>
-          This background informs a direct, structured approach that aligns closely with how professionals think, operate, and make decisions. The focus is not only on reducing stress, but on restoring clarity, consistency, and sustainable performance.
-        </p>
+  <p>
+    Our focus includes identifying the patterns that drive burnout and implementing changes that restore clarity, consistency, and sustainable performance.
+  </p>
 
-        <p>
-          Clients often seek this work when they want to feel sharper, more in control, and more present—both in their work and in their relationships at home.
-        </p>
-      </div>
+  <p>
+    Our approach is designed to help individuals feel sharper, more in control, and more present both professionally and in their relationships at home.
+  </p>
+</div>
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </body>
 </html>

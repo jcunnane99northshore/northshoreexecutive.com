@@ -17,12 +17,13 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
 
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
@@ -33,7 +34,9 @@ body {
 }
 
 .brand {
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.01em;
   color: var(--charcoal);
 }
 
@@ -43,6 +46,11 @@ body {
   color: var(--muted);
 }
 
+.nav a:hover {
+  color: var(--teal);
+}
+
+/* CONTENT */
 .container {
   max-width: 1000px;
   margin: auto;
@@ -51,6 +59,7 @@ body {
 
 h1 {
   font-size: 42px;
+  line-height: 1.1;
   color: var(--charcoal);
 }
 
@@ -67,8 +76,14 @@ p {
   background: var(--teal);
   color: white;
   text-decoration: none;
+  font-weight: 500;
 }
 
+.button:hover {
+  background: var(--teal-light);
+}
+
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -80,8 +95,18 @@ p {
   background: white;
   padding: 20px;
   border-radius: 12px;
+  border: 1px solid #eee;
 }
 
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
@@ -92,6 +117,7 @@ p {
 
 <body>
 
+<!-- HEADER -->
 <div class="header">
   <div class="brand">NorthShore Executive Counseling</div>
   <div class="nav">
@@ -100,6 +126,7 @@ p {
   </div>
 </div>
 
+<!-- HERO -->
 <div class="container">
   <h1>High performance should not come at the cost of your life outside of work.</h1>
 
@@ -112,13 +139,14 @@ p {
   </a>
 
   <p>
-    From the outside, things may still look successful. Internally, something feels harder than it used to. Work follows you home. Over time, burnout begins to affect both performance and presence.
+    From the outside, things may still look successful. Internally, something feels harder than it used to. Work follows you home, and over time burnout begins to affect both performance and presence.
   </p>
 
   <p>
     Many clients come in wanting not only to feel sharper again, but also to strengthen relationships at home that have been affected by the spillover of stress.
   </p>
 
+  <!-- GRID -->
   <div class="grid">
     <div class="card">
       <ul>

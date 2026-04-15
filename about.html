@@ -4,21 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meet | NorthShore Executive Counseling</title>
-  <meta name="description" content="Meet NorthShore Executive Counseling and learn more about the background behind its executive-focused approach." />
 
   <style>
     :root {
       --teal: #0f766e;
-      --teal-light: #14b8a6;
       --charcoal: #16212b;
-      --text: #31414f;
       --muted: #667585;
       --line: #e8edf1;
       --soft: #f6f8fa;
       --white: #ffffff;
-      --shadow: 0 18px 48px rgba(22, 33, 43, 0.08);
-      --shadow-soft: 0 10px 30px rgba(22, 33, 43, 0.05);
-      --radius: 22px;
       --max: 1100px;
     }
 
@@ -26,14 +20,15 @@
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
-      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto;
+      color: var(--charcoal);
       background: var(--white);
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
     a { text-decoration: none; color: inherit; }
 
+    /* HEADER */
     .header {
       position: sticky;
       top: 0;
@@ -54,7 +49,6 @@
     .brand {
       font-weight: 700;
       font-size: 1.4rem;
-      color: var(--charcoal);
     }
 
     .nav-links a {
@@ -62,6 +56,7 @@
       color: var(--muted);
     }
 
+    /* CONTENT */
     .container {
       max-width: var(--max);
       margin: auto;
@@ -70,8 +65,7 @@
 
     h1 {
       font-size: 42px;
-      color: var(--charcoal);
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
 
     p {
@@ -90,21 +84,30 @@
     img {
       width: 100%;
       border-radius: 16px;
-      box-shadow: var(--shadow-soft);
     }
 
+    .name {
+      margin: 14px 0 0;
+      font-weight: 600;
+      font-size: 18px;
+      letter-spacing: -0.01em;
+    }
+
+    /* BACKGROUND CARD */
     .card {
-      margin-top: 30px;
-      padding: 28px;
-      border-radius: var(--radius);
+      margin-top: 22px;
+      padding: 24px;
+      border-radius: 18px;
       border: 1px solid var(--line);
       background: var(--soft);
     }
 
     .card h2 {
-      margin-bottom: 10px;
-      color: var(--charcoal);
-      font-size: 1.1rem;
+      margin: 0 0 12px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
     }
 
     .card ul {
@@ -113,14 +116,16 @@
     }
 
     .card li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      color: var(--muted);
     }
 
+    /* CTA */
     .cta {
       margin-top: 40px;
       padding: 32px;
       border-radius: 28px;
-      background: linear-gradient(135deg, var(--charcoal), #213343);
+      background: linear-gradient(135deg, #16212b, #213343);
       color: white;
     }
 
@@ -142,6 +147,7 @@
         grid-template-columns: 1fr;
       }
     }
+
   </style>
 </head>
 
@@ -163,40 +169,44 @@
 
 <div class="grid">
 
-<div>
-  <img src="headshot.jpg" alt="Joseph Cunnane">
-  
-  <div class="card">
-    <h2>Background</h2>
-    <ul>
-      <li>Master of Arts in Counseling, Northwestern University</li>
-      <li>MBA</li>
-      <li>Certified Public Accountant (CPA)</li>
-      <li>20+ years in public accounting, banking, and finance</li>
-      <li>Licensed Clinical Professional Counselor (LCPC), Illinois</li>
-    </ul>
+  <!-- LEFT COLUMN -->
+  <div>
+    <img src="headshot.jpg" alt="Joseph Cunnane">
+
+    <p class="name">Joseph Cunnane, LCPC</p>
+
+    <div class="card">
+      <h2>Background</h2>
+      <ul>
+        <li>Master of Arts in Counseling, Northwestern University</li>
+        <li>MBA</li>
+        <li>Certified Public Accountant (CPA)</li>
+        <li>20+ years in public accounting, banking, and finance</li>
+        <li>Licensed Clinical Professional Counselor (LCPC), Illinois</li>
+      </ul>
+    </div>
   </div>
-</div>
 
-<div>
+  <!-- RIGHT COLUMN -->
+  <div>
 
-<p>
-  High-performing professionals often seek support when burnout, sustained stress, or constant pressure begin to affect both performance and relationships.
-</p>
+    <p>
+      High-performing professionals often seek support when burnout, sustained stress, or constant pressure begin to affect both performance and relationships.
+    </p>
 
-<p>
-  Joseph brings a practical understanding of high-responsibility environments shaped by more than twenty years in public accounting, banking, and finance before transitioning to counseling. He was a Certified Public Accountant (CPA) and holds a Master of Business Administration (MBA). He also holds a Master of Arts in Counseling from Northwestern University and is a Licensed Clinical Professional Counselor (LCPC) in Illinois.
-</p>
+    <p>
+      Joseph brings a practical understanding of high-responsibility environments shaped by more than twenty years in public accounting, banking, and finance before transitioning to counseling. He was a Certified Public Accountant (CPA) and holds a Master of Business Administration (MBA). He also holds a Master of Arts in Counseling from Northwestern University and is a Licensed Clinical Professional Counselor (LCPC) in Illinois.
+    </p>
 
-<p>
-  This background informs a direct, structured style that aligns with how professionals think, operate, and make decisions. The goal is not simply to reduce stress, but to restore clarity, consistency, sustainable performance, and a stronger sense of control.
-</p>
+    <p>
+      This background informs a direct, structured style that aligns with how professionals think, operate, and make decisions. The goal is not simply to reduce stress, but to restore clarity, consistency, sustainable performance, and a stronger sense of control.
+    </p>
 
-<p>
-  Treatment centers on identifying the patterns that drive burnout and implementing targeted changes that support lasting improvement. Evidence-based methodologies including Cognitive Behavioral Therapy, Acceptance and Commitment Therapy, and psychodynamic therapy are integrated in a way that remains practical, relevant, and tailored to the individual.
-</p>
+    <p>
+      Treatment centers on identifying the patterns that drive burnout and implementing targeted changes that support lasting improvement. Evidence-based methodologies including Cognitive Behavioral Therapy, Acceptance and Commitment Therapy, and psychodynamic therapy are integrated in a way that remains practical, relevant, and tailored to the individual.
+    </p>
 
-</div>
+  </div>
 
 </div>
 

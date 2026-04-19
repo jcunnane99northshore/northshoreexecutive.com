@@ -166,6 +166,26 @@
       color: var(--white);
       box-shadow: 0 12px 28px rgba(15, 118, 110, 0.18);
     }
+    .button-primary {
+      background: var(--teal);
+      color: var(--white);
+      box-shadow: 0 12px 28px rgba(15, 118, 110, 0.18);
+    }
+
+    .button-primary:hover {
+      background: var(--teal-light);
+      transform: translateY(-1px);
+    }
+     .button-secondary {
+      border: 1px solid rgba(22, 33, 43, 0.10);
+      background: rgba(255, 255, 255, 0.84);
+      color: var(--charcoal);
+    }
+
+    .button-secondary:hover {
+      border-color: rgba(15, 118, 110, 0.30);
+      transform: translateY(-1px);
+    }
     @media (max-width: 768px) {
       .grid {
         grid-template-columns: 1fr;
@@ -277,14 +297,21 @@
 
 </div>
 
-<div class="cta">
-  <p>
-    When burnout begins to affect both work and home life, early attention can prevent deeper disruption.
-  </p>
-
-  <a class="button" href="https://care.headway.co/providers/joseph-cunnane?utm_source=pem&utm_medium=direct_link&utm_campaign=193007" target="_blank">
-    Schedule a Consultation
-  </a>
+   <div class="cta-band">
+          <div class="cta-band-inner">
+            <h2>Addressing burnout early protects more than performance.</h2>
+            <p>
+              Our focus is not only on helping professionals function better, but on helping them sustain a level of effectiveness that does not steadily erode life outside of work.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="https://care.headway.co/providers/joseph-cunnane?utm_source=pem&utm_medium=direct_link&utm_campaign=193007" target="_blank" rel="noopener noreferrer">Schedule a Consultation</a>
+              <a class="button button-secondary" href="about.html">Meet the Practice</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </div>
 
 </div>

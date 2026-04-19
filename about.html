@@ -121,6 +121,28 @@
     }
 
     /* CTA */
+    .nav-group {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-weight: 500;
+      transition: color 160ms ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--charcoal);
+    }
     .cta {
       display: inline-flex;
       align-items: center;

@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meet | NorthShore Executive Counseling</title>
 
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --teal: #0f766e;
@@ -21,7 +26,7 @@
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: var(--charcoal);
       background: var(--white);
       line-height: 1.6;
@@ -59,8 +64,6 @@
 
     .logo {
       height: 80px;
-      width: auto;
-      display: block;
     }
 
     .brand-text {
@@ -72,7 +75,6 @@
     .brand-line-1 {
       font-size: 1.5rem;
       font-weight: 600;
-      color: var(--charcoal);
     }
 
     .brand-line-2 {
@@ -96,12 +98,11 @@
       transition: color 160ms ease;
     }
 
-    .nav-links a:hover,
-    .nav-links a.active {
+    .nav-links a:hover {
       color: var(--charcoal);
     }
 
-    /* CTA BUTTON (FIXED) */
+    /* CTA BUTTON */
     .cta {
       display: inline-flex;
       align-items: center;
@@ -128,13 +129,15 @@
       padding: 60px 20px;
     }
 
+    /* HEADLINE (KEY UPGRADE) */
     h1 {
-  font-family: 'Inter', sans-serif;
-  font-size: 64px;
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-}
+      font-size: clamp(3rem, 6vw, 5.25rem);
+      font-weight: 800;
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      max-width: 10ch;
+      margin: 0 0 28px;
+    }
 
     p {
       font-size: 18px;
@@ -187,15 +190,18 @@
       color: var(--muted);
     }
 
+    /* MOBILE */
     @media (max-width: 768px) {
       .grid {
         grid-template-columns: 1fr;
       }
 
       h1 {
-        font-size: 32px;
+        line-height: 1;
+        max-width: 100%;
       }
     }
+
   </style>
 </head>
 
@@ -206,7 +212,6 @@
 
     <a href="index.html" class="brand">
       <img src="lighthouse_icon_fixed.png" class="logo" alt="NorthShore Executive Counseling">
-
       <div class="brand-text">
         <div class="brand-line-1">NorthShore</div>
         <div class="brand-line-2">Executive Counseling</div>
@@ -230,7 +235,7 @@
 
 <div class="grid">
 
-  <!-- LEFT COLUMN -->
+  <!-- LEFT -->
   <div>
     <img src="headshot.jpg" alt="Joseph Cunnane">
     <p class="name">Joseph Cunnane, LCPC</p>
@@ -247,25 +252,23 @@
     </div>
   </div>
 
-  <!-- RIGHT COLUMN -->
+  <!-- RIGHT -->
   <div>
-
     <p>
       High-performing professionals often seek support when burnout, sustained stress, or constant pressure begin to affect both performance and relationships.
     </p>
 
     <p>
-      Joseph brings a practical understanding of high-responsibility environments shaped by more than twenty years in public accounting, banking, and finance before transitioning to counseling. He was a Certified Public Accountant (CPA) and holds a Master of Business Administration (MBA). He also holds a Master of Arts in Counseling from Northwestern University and is a Licensed Clinical Professional Counselor (LCPC) in Illinois.
+      Joseph brings a practical understanding of high-responsibility environments shaped by more than twenty years in public accounting, banking, and finance before transitioning to counseling.
     </p>
 
     <p>
-      This background informs a direct, structured style that aligns with how professionals think, operate, and make decisions. The goal is not simply to reduce stress, but to restore clarity, consistency, sustainable performance, and a stronger sense of control.
+      This background informs a direct, structured style that aligns with how professionals think, operate, and make decisions.
     </p>
 
     <p>
-      Treatment centers on identifying the patterns that drive burnout and implementing targeted changes that support lasting improvement. Evidence-based methodologies including Cognitive Behavioral Therapy, Acceptance and Commitment Therapy, and psychodynamic therapy are integrated in a way that remains practical, relevant, and tailored to the individual.
+      The goal is not simply to reduce stress, but to restore clarity, consistency, sustainable performance, and a stronger sense of control.
     </p>
-
   </div>
 
 </div>

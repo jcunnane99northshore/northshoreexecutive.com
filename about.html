@@ -161,7 +161,45 @@
       background: var(--teal-light);
       transform: translateY(-1px);
     }
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
 
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 0 22px;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease;
+    }
+
+    .button-primary {
+      background: var(--teal);
+      color: var(--white);
+      box-shadow: 0 12px 28px rgba(15, 118, 110, 0.18);
+    }
+
+    .button-primary:hover {
+      background: var(--teal-light);
+      transform: translateY(-1px);
+    }
+
+    .button-secondary {
+      border: 1px solid rgba(22, 33, 43, 0.10);
+      background: rgba(255, 255, 255, 0.84);
+      color: var(--charcoal);
+    }
+
+    .button-secondary:hover {
+      border-color: rgba(15, 118, 110, 0.30);
+      transform: translateY(-1px);
+    }
     @media (max-width: 768px) {
       .grid {
         grid-template-columns: 1fr;

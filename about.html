@@ -8,6 +8,7 @@
   <style>
     :root {
       --teal: #0f766e;
+      --teal-light: #159a91;
       --charcoal: #16212b;
       --muted: #667585;
       --line: #e8edf1;
@@ -26,7 +27,10 @@
       line-height: 1.6;
     }
 
-    a { text-decoration: none; color: inherit; }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
     /* HEADER */
     .header {
@@ -46,14 +50,75 @@
       align-items: center;
     }
 
+    /* BRAND */
     .brand {
-      font-weight: 700;
-      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      height: 80px;
+      width: auto;
+      display: block;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-line-1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--charcoal);
+    }
+
+    .brand-line-2 {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    /* NAV */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
     }
 
     .nav-links a {
-      margin-left: 20px;
       color: var(--muted);
+      font-weight: 500;
+      transition: color 160ms ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--charcoal);
+    }
+
+    /* CTA BUTTON (FIXED) */
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: var(--teal);
+      color: #ffffff !important;
+      font-weight: 600;
+      box-shadow: 0 10px 24px rgba(15, 118, 110, 0.18);
+      transition: transform 160ms ease, background-color 160ms ease;
+    }
+
+    .cta:hover {
+      background: var(--teal-light);
+      transform: translateY(-1px);
     }
 
     /* CONTENT */
@@ -90,10 +155,9 @@
       margin: 14px 0 0;
       font-weight: 600;
       font-size: 18px;
-      letter-spacing: -0.01em;
     }
 
-    /* BACKGROUND CARD */
+    /* CARD */
     .card {
       margin-top: 22px;
       padding: 24px;
@@ -120,109 +184,15 @@
       color: var(--muted);
     }
 
-    /* CTA */
-    .nav-group {
-      display: flex;
-      align-items: center;
-      gap: 22px;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-    }
-
-    .nav-links a {
-      color: var(--muted);
-      font-weight: 500;
-      transition: color 160ms ease;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: var(--charcoal);
-    }
-    .cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 44px;
-      padding: 0 18px;
-      border-radius: 999px;
-      background: var(--teal);
-      color: var(--white);
-      font-weight: 600;
-      box-shadow: 0 10px 24px rgba(15, 118, 110, 0.18);
-      transition: transform 160ms ease, background-color 160ms ease;
-    }
-    .cta:hover {
-      background: var(--teal-light);
-      transform: translateY(-1px);
-    }
-      .button {
-      background: var(--teal);
-      color: var(--white);
-      box-shadow: 0 12px 28px rgba(15, 118, 110, 0.18);
-    }
-    .button-primary {
-      background: var(--teal);
-      color: var(--white);
-      box-shadow: 0 12px 28px rgba(15, 118, 110, 0.18);
-    }
-
-    .button-primary:hover {
-      background: var(--teal-light);
-      transform: translateY(-1px);
-    }
-     .button-secondary {
-      border: 1px solid rgba(22, 33, 43, 0.10);
-      background: rgba(255, 255, 255, 0.84);
-      color: var(--charcoal);
-    }
-
-    .button-secondary:hover {
-      border-color: rgba(15, 118, 110, 0.30);
-      transform: translateY(-1px);
-    }
     @media (max-width: 768px) {
       .grid {
         grid-template-columns: 1fr;
       }
+
+      h1 {
+        font-size: 32px;
+      }
     }
-/* ===== LOGO + BRAND ===== */
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.logo {
-  height: 80px;
-  width: auto;
-  display: block;
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
-
-.brand-line-1 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--charcoal);
-}
-
-.brand-line-2 {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--muted);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
   </style>
 </head>
 
@@ -243,7 +213,9 @@
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="https://care.headway.co/providers/joseph-cunnane?utm_source=pem&utm_medium=direct_link&utm_campaign=193007" class="cta" target="_blank">View Availability</a>
+      <a href="https://care.headway.co/providers/joseph-cunnane?utm_source=pem&utm_medium=direct_link&utm_campaign=193007" class="cta" target="_blank">
+        View Availability
+      </a>
     </div>
 
   </div>
@@ -258,7 +230,6 @@
   <!-- LEFT COLUMN -->
   <div>
     <img src="headshot.jpg" alt="Joseph Cunnane">
-
     <p class="name">Joseph Cunnane, LCPC</p>
 
     <div class="card">
@@ -294,14 +265,6 @@
 
   </div>
 
-</div>
-
-  
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 </div>
 
 </div>

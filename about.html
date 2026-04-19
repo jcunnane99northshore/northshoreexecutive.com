@@ -122,24 +122,22 @@
 
     /* CTA */
     .cta {
-      margin-top: 40px;
-      padding: 32px;
-      border-radius: 28px;
-      background: linear-gradient(135deg, #16212b, #213343);
-      color: white;
-    }
-
-    .cta p {
-      color: rgba(255,255,255,0.85);
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 16px;
-      padding: 14px 24px;
-      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
       background: var(--teal);
-      color: white;
+      color: var(--white);
+      font-weight: 600;
+      box-shadow: 0 10px 24px rgba(15, 118, 110, 0.18);
+      transition: transform 160ms ease, background-color 160ms ease;
+    }
+
+    .cta:hover {
+      background: var(--teal-light);
+      transform: translateY(-1px);
     }
 
     @media (max-width: 768px) {
